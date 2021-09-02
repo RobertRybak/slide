@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff0e8;
+  font-family: 'Ubuntu', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

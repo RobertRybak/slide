@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+// var color
+$clr-white:#ffffff;
+$clr-black:#000000;
+$clr-first-slide:#eaa580;
+$clr-second-slide:#cc4e3a;
+$clr-third-slide:#d68425;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff0e8;
+  font-family: 'Ubuntu', sans-serif;
+}
