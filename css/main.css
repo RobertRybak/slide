@@ -14,4 +14,77 @@ body {
   background-color: #fff0e8;
   font-family: 'Ubuntu', sans-serif;
 }
+
+.slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 504px;
+}
+
+.slider-container .slide {
+  width: 100%;
+  max-width: 17%;
+  min-height: 300px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: max-width .2s ease-in-out;
+  transition: max-width .2s ease-in-out;
+  overflow: hidden;
+}
+
+.slider-container .slide::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background .3s ease;
+  transition: background .3s ease;
+}
+
+.slider-container .slide__img {
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-container .slide__one .slide__img {
+  background-image: url("../images/odbitki_tina.jpg");
+  background-color: #eaa580;
+}
+
+.slider-container .slide__one .slide__animation-box {
+  background-color: #eaa580;
+}
+
+.slider-container .slide__two .slide__img {
+  background-image: url("../images/tina_fotoksiazka.jpg");
+  background-color: #cc4e3a;
+}
+
+.slider-container .slide__two .slide__animation-box {
+  background-color: #cc4e3a;
+}
+
+.slider-container .slide__three .slide__img {
+  background-image: url("../images/tina_kubek.jpg");
+  background-color: #d68425;
+}
+
+.slider-container .slide__three .slide__animation-box {
+  background-color: #d68425;
+}
+
+.slider-container .slide.active {
+  max-width: 70%;
+  cursor: auto;
+}
 /*# sourceMappingURL=main.css.map */
