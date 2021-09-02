@@ -27,9 +27,19 @@
 
     </div>
 
-
-
   </header>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+
+    slides.forEach(item => {
+      item.addEventListener('click', function () {
+        slides.forEach(slide => { slide.classList.remove('active') })
+        this.classList.add('active')
+      })
+    })
+  </script>
+
 </body>
 
 </html>
