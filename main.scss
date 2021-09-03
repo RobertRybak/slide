@@ -12,6 +12,7 @@ $clr-third-slide:#d68425;
 *::after {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -126,6 +127,9 @@ body {
           position: absolute;
         }
      }
+     &__card {
+      opacity: 0;
+    }
    }
 
 
@@ -140,7 +144,7 @@ body {
         height: 40px;
       }
     }
-  } //hover end
+   } //hover end
 
 
     &.active {
@@ -148,6 +152,80 @@ body {
       cursor: auto;
       &::before {
         display: none;
+      }
+
+        .slide {
+          &__title {
+            display: none;
+          }
+    
+          &__animation-box {  
+            display: flex;
+            justify-content: flex-start;
+            position: absolute;
+            left: 12%;
+            bottom:-130px;
+            width: 412px;
+            height: 300px;
+            padding: 3em;
+            border-radius: 8px;
+            transition: all .3s ease;
+            img {
+            display: none;
+            }
+        }
+
+        &__card {
+          font-weight: bold;
+          opacity: 1;
+          transition: opacity cubic-bezier( 0,0,0.30,1 ) .3s;
+          transition-delay: .2s;
+
+          &-body {
+            margin-bottom: 24px;
+          }
+          .card {
+            &__title {
+              margin-top:0;
+              margin-bottom: 24px;
+              font-size: 32px;
+            }
+
+            &__promo {
+              font-size: 42px;
+            }
+          }
+        }
+
+        &__card-footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .card__btn {
+            background-color: $clr-black;
+            color:$clr-white;
+            padding: 12px;
+            border-radius: 30px;
+            min-width: 130px;
+            font-weight: normal;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            transition: all .3s ease;
+            
+            &:hover {
+              box-shadow: 0 3px 4px rgba($clr-black, .55);
+              transform: translateY(-1px);
+            }
+            &:active {
+              transform: translateY(0);
+            }
+          }
+          small {
+            font-weight: normal;
+          }
+        }
       }
     } // active end
   }
