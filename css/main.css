@@ -162,6 +162,11 @@ body {
   display: none;
 }
 
+.slider-container .slide.active .slide__img {
+  -webkit-animation: kenburns 30s infinite;
+          animation: kenburns 30s infinite;
+}
+
 .slider-container .slide.active .slide__title {
   display: none;
 }
@@ -326,6 +331,48 @@ body {
   }
   .slider-container .slide.active .slide__card-body .card__promo {
     font-size: 32px;
+  }
+}
+
+@-webkit-keyframes kenburns {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+@keyframes kenburns {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
   }
 }
 /*# sourceMappingURL=main.css.map */

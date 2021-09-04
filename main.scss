@@ -152,7 +152,11 @@ body {
         display: none;
       }
 
-        .slide {
+      .slide__img {
+        animation: kenburns 30s infinite;
+      }
+
+      .slide {
           &__title {
             display: none;
           }
@@ -295,5 +299,22 @@ body {
         }
       }
     }
+  }
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1) ;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: scale(1.1) ;
+    animation-timing-function: ease-in;
+
+  }
+  100% {
+    transform: scale(1) ;
+    animation-timing-function: ease-in;
+
   }
 }
